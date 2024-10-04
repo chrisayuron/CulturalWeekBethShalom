@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informática Beth Shalom 2024</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            height: 100vh;
+            width: 100%;
+        }
+        body{
+            width: 100%;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: auto 8fr auto;
+            grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+        }
+        header{
+            padding: 1rem 0 0 0;
+            grid-area: header;
+            width: 100%;
+            font-size: clamp(1rem, 1.5rem, 2.0rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header h1, header h2{
+            border: solid 1px;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 17%, rgba(106,129,255,1) 100%); /* Degradado */
+            -webkit-background-clip: text; /* Recorte del fondo al texto (para Safari) */
+            -webkit-text-fill-color: transparent; /* Texto transparente (para Safari) */
+            background-clip: text; /* Recorte del fondo al texto */
+            color: transparent; /* Texto transparente para otros navegadores */
+              
+            }
+        header img{
+            width: 30vw;
+            display: block;
+            margin: auto;
+        }
+        main{
+            grid-area: main;
+            /* overflow:auto; */
+            
+        }
+        .main-text{
+            background-color: #fffbfb2a;
+            color: #000;
+            padding: 1rem;
+            text-align: justify;
+            font-size: clap
+            
+            ;
+        }
+        .main-projects{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            justify-items: center;
+        }
+        .project{
+            /* border: solid 1px; */
+            box-shadow: 0.1rem 0.1rem 0.5rem #00000027;
+            border-radius: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:80%;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .project-title{
+            text-align: center;
+            font-weight: 800;
+            margin: 0.5rem;
+
+        }
+        .project-image{
+            width: 70vw;
+
+        }
+        .project-description{
+            /* background-color: #fffbfb2a; */
+            /* color: #000; */
+            text-align: left;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        .project-instruction{
+            margin: 0.5rem 0;
+        }
+        .project-link{
+            display: block;
+            width: fit-content;
+            /* border: solid 1px; */
+            box-shadow: 0.1rem 0.1rem 0.5rem black;
+            font-weight: 800;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            margin: 0.5rem 0;
+        }
+        .project-authors{
+            margin:0.5rem 0;
+        }
+        .project-link:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        footer{
+            grid-area: footer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 17%, rgba(106,129,255,1) 100%); /* Degradado */
+            color: #fff;
+            font-weight: 900;
+            
+        }
+
+        
+        @media (min-width:768px){
+            .main-projects{
+                grid-template-columns: 1fr 1fr ;
+        }
+        header{
+            padding: 1rem 0 0 0;
+            grid-area: header;
+            width: 100%;
+            font-size: clamp(1rem, 1.5rem, 2.0rem);
+            display: flex;
+            flex-direction: row;
+        }
+        header img{
+            width: 10vw;
+            display:inline;
+        }
+        .project-image{
+            width: 30vw;
+            max-width: 30vw;
+
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-logo">
+                <img src="./escudoBethShalom.png" alt="escudoBethShalom">
+            </div>
+            <div class="header-title">
+                <h1>BETHSHALOM CULTURAL WEEK  2024</h1>
+                <h2>4 AND 5 GRADE SCRATCH PROJECTS</h2>
+            </div>
+        </header>
+        <main>
+            <div class="main-intro">
+                <p class="main-text english">
+                    For three weeks, the 4th and 5th-grade students from Gimnasio Campestre Beth Shalom have been working on a special project for Cultural Week. Divided into teams, they created animations in Scratch that represent various aspects of Colombia's rich culture, such as its biomes, flora, fauna, tourist sites, folk music, traditional games, artists, and festivals. This project not only allowed them to develop programming skills but also to explore and share the essence of Colombia through digital creativity. As part of English Day, the students presented their projects in English, integrating language learning into a cultural and technological activity. This page is dedicated to sharing the effort, imagination, and talent of our students, who have captured the best of Colombia in each animation. ¡We hope you enjoy the cultural and technological journey they have prepared!
+                <p class="main-text spanish">
+                    Durante tres semanas, los estudiantes de 4º y 5º grado del Gimnasio Campestre Beth Shalom han trabajado en un proyecto especial para la Semana Cultural. Divididos en equipos, crearon animaciones en Scratch que representan diversos aspectos de la riqueza cultural de Colombia, como sus biomas, flora, fauna, sitios turísticos, música folclórica, juegos tradicionales, artistas y festivales. Este proyecto no solo les permitió desarrollar habilidades de programación, sino también explorar y compartir la colombianidad a través de la creatividad digital.   Como parte del English Day, los estudiantes presentaron sus proyectos en inglés, integrando el aprendizaje del idioma en una actividad cultural y tecnológica. Esta página está dedicada a compartir el esfuerzo, la imaginación y el talento de nuestros estudiantes, quienes han plasmado lo mejor de Colombia en cada animación. ¡Esperamos que disfruten del viaje cultural y tecnológico que ellos han preparado!
+                </p>
+
+                </p>
+            </div>
+            <div class="main-projects">
+               
+                
+            </div>
+        </main>
+        <footer>
+            <p>Realizado por Ronald Rojas Newball</p>
+        </footer>
+    </div>
+    <script>
+        const proyectos = [
+    {
+        "title":"Colombian biomes" ,
+        "description": "En esta animación puedes ver algunos biomas de Colombia como: océano, río y páramo y algunos datos sobre ellos.",
+        "image":"Proyectos4/Biomas.jpg",
+        "instruction":"Presiona la bandera verde y luego flecha arriba para iniciar" ,
+        "authors":"Maria Paz Toledo, Victoria Bautista" ,
+        "grade":4,
+        "blocks":"Apariencia, Sonido, Eventos, Control" ,
+        "link":"./Proyectos4/Biomas Colombianos.html"
+    },
+    {
+        "title": "Colombian flora",
+        "description":"En esta animación, podrás responder algunas preguntas acerca de la flora de Colombia" ,
+        "image":"Proyectos4/Flora.jpg",
+        "instruction":"Presiona la bandera verde, luego presiona la barra espaciadora y presta atención. Presiona el número 1, 3 o 5 para ver las preguntas y 2, 4 o 6 para ver las respuestas." ,
+        "authors":"Valentina de Sales, Zara Manzano, Celesthe Salcedo" ,
+        "grade":4,
+        "blocks":"Control, Eventos, Apariencia" ,
+        "link":"./Proyectos4/Flora Colombiana.html"
+    },
+    {
+        "title": "Colombian athletes",
+        "description":"En esta animación podrá ver, leer y esuchar acerca de algunos deportistas Colombiano" ,
+        "image":"Proyectos4/Deportistas.jpg",
+        "instruction":"Presiona la bandera verde, escuchar atentamente y luego presionar siguiente para ver otro deportista" ,
+        "authors":"Elias Rodriguez, Jeronimo Másmela" ,
+        "grade":4,
+        "blocks":"Eventos, Apariencia,Control, Texto a voz" ,
+        "link":"./Proyectos4/Deportistas Colombianos.html"
+    },
+    {
+        "title": "Colombian fauna",
+        "description":"En esta animación puedes observar algunas especies de fauna que puedes encontrar en Colombia." ,
+        "image":"Proyectos4/Fauna.jpg",
+        "instruction":"Presiona la bandera verde y luego barra espaciado, flecha derecha, flecha arriba o flecha abajo para escuchar la explicación" ,
+        "authors":"Emmanuel Espinosa, Samuel Bonilla" ,
+        "grade":4,
+        "blocks":"Control, Eventos, Apariencia, Sonido, Sensores, Movimiento" ,
+        "link":"./Proyectos4/Fauna Colombiana.html"
+    },
+    {
+        "title": "Colombian regions",
+        "description":"En esta animación podrás ver información acerca de algunas regiones naturales de Colombia" ,
+        "image":"Proyectos4/Regiones.jpg",
+        "instruction":"Presiona la bandera verde y presta mucha atención a la información" ,
+        "authors":"Josue Ascanio, Juan Jose Balaguera" ,
+        "grade":4,
+        "blocks":"Control, Eventos, Apariencia, Sonido" ,
+        "link":"./Proyectos4/Regiones de Colombia.html"
+    },
+    {
+        "title": "Colombian tourist sites",
+        "description":"En esta animación puede conocer algunos sitios turísticos de Colombia" ,
+        "image":"./Proyectos4/Sitios Turisticos.jpg",
+        "instruction":"Presiona la bandera verde y presta mucha atención a la información. Luego disfruta con las preguntas" ,
+        "authors":"Maria Juliana Espinosa, Maria José Ochoa" ,
+        "grade":4,
+        "blocks":"Movimiento, Apariencia, Eventos, Control, Sonido" ,
+        "link":"./Proyectos4/Sitios Turisticos.html"
+    },
+    {
+        "title": "Colombian folk music",
+        "description":"En esta animación, puedes leer y escuchar un poco acerca de la música folclórica de Colombia" ,
+        "image":"Proyectos4/Folclor.jpg",
+        "instruction":"Presiona la bandera verde y presta atención a la información. " ,
+        "authors":"Samuel Esteban Parra , Mateo Quijano, Miguel Vargas" ,
+        "grade":4,
+        "blocks":"Eventos, Apariencia, Texto a Voz, Variables, Sonido, Operadores" ,
+        "link":"./Proyectos4/Folclor Colombiano.html"
+    },
+    {
+        "title": "National Anthem of Colombia",
+        "description":"En esta animación, podrás conocer algunos detalles sobre el himno nacional de Colombia, ademas de ver a Luis Diaz y James Rodriguez 'cantar' el coro del himno." ,
+        "image":"Proyectos5/Himno.jpg",
+        "instruction":"Presiona la bandera verde y presta atención" ,
+        "authors":"Victoria Suarez, Jose David Solano, Mariana Medel" ,
+        "grade":5,
+        "blocks":"Eventos, Control,Sonido, Apariencia, Movimiento" ,
+        "link":"Proyectos5/Himno de Colombia.html"
+    },
+    {
+        "title": "Traditional Games of Colombia",
+        "description":"En esta animación podrás observar y escuchar acerca de algunos tradicionales en Colombia " ,
+        "image":"Proyectos5/juegos.jpg",
+        "instruction":"Presiona la bandera verde y presta atención",
+        "authors":"Miguel Marín, Pablo Archila, Guidian Daza" ,
+        "grade":5,
+        "blocks":"Eventos, Control, Apariencia, Texto a Voz" ,
+        "link":"Proyectos5/Juegos Tipicos Colombia.html"
+    },
+    {
+        "title": "Colombian Artist",
+        "description":"En este animación podrás ver y conocer un poco más acerca de algunos artísticas Colombianos" ,
+        "image":"Proyectos5/Artistas.jpg",
+        "instruction":"Presiona la bandera verde y espera. Luego haz click sobre el personaje del que deseas aprender. Presiona el botón leave para volver a escoger otro personaje. Presiona r, para ver la despedida" ,
+        "authors":"Catalina Becerra, Luciana Caldón, Juan Felipe Lozada" ,
+        "grade":5,
+        "blocks":"Eventos, Control, Apariencia, Movimiento" ,
+        "link":"Proyectos5/Artistas Colombianos.html"
+    },
+    {
+        "title": "Festivals and Carnivals of Colombia ",
+        "description":"En esta animación, podrás aprender acerca de algunas fiestas tradicionales de Colombia" ,
+        "image":"Proyectos5/Festivales.jpg",
+        "instruction":"Presionar la bandera verde y luego la barra espaciadora. Ahora presta atención a la información." ,
+        "authors":"Thomas Uribe, Samuel Camacho, Juan David Lozada  " ,
+        "grade":5,
+        "blocks":"Eventos, Control, Apariencia, Movimiento" ,
+        "link":"Proyectos5/Festivales-Carnavales Colombia.html"
+    },
+    {
+        "title": "Colombian Fauna",
+        "description":"En esta animación podrás observar y aprender acerca de la fauna Colombiana" ,
+        "image":"Proyectos5/Fauna.jpg",
+        "instruction":"Presiona la bandera verde y presta atención" ,
+        "authors":"Ambar Guerrero, Thaliana Hoyos, Andres Felipe Uribe" ,
+        "grade":5,
+        "blocks":"Eventos, Control, Movimiento, Apariencia" ,
+        "link":"Proyectos5/Fauna de Colombia.html"
+    },
+    {
+        "title": "Colombian Flora",
+        "description":"En esta animación podrás observar y aprender acerca de la flora Colombiana" ,
+        "image":"Proyectos5/Flora.jpg",
+        "instruction":"Presiona la bandera verde y preta atención" ,
+        "authors":"Isabella Laverde, Alejandro Palomino" ,
+        "grade":5,
+        "blocks":"Eventos, Control, Apariencia, Sonido" ,
+        "link":"Proyectos5/Flora de colombia.html"
+    },
+    {
+        "title": "Colombian Writers",
+        "description":"En esta animación podrás escuchar un poco acerca de algunos escritores Colombianos" ,
+        "image":"./ColombianWriters.jpg",
+        "instruction":"Presionar la bandera verde, luego haz click sobre el personaje que quieres escuchar. Para regresear presiona el botón back que al terminar el audio." ,
+        "authors":"Mr Ronald" ,
+        "grade":"-",
+        "blocks":"Eventos, Control, Texto a voz, Apariencia, Movimiento, Sensoreso" ,
+        "link":"./Escritores Colombianos.html"
+    }
+]
+    const mainProjects = document.getElementsByClassName("main-projects")[0]
+    proyectos.forEach(item => {
+        const {title, description,image,instruction,authors,grade,blocks,link}=item
+        const project=document.createElement("div")
+        const projectTitle = document.createElement("h2")
+        const projectDescription = document.createElement("p") 
+        const projectImage = document.createElement("img") 
+        const projectInstruction = document.createElement("p") 
+        const projectAuthors = document.createElement("p") 
+        const projectBlocks = document.createElement("p")
+        const projectGrade = document.createElement("p") 
+        const projectLink = document.createElement("a")
+        project.classList.add("project") 
+        projectTitle.classList.add("project-title")
+        projectTitle.innerText=title
+        projectDescription.classList.add("project-description")
+        projectDescription.innerText=description
+        projectImage.classList.add("project-image")
+        projectImage.src=image
+        projectImage.setAttribute("loading","lazy")
+        projectInstruction.classList.add("project-instruction")
+        projectInstruction.innerText=instruction
+        projectAuthors.classList.add("project-authors")
+        projectAuthors.innerText="Autores: "+authors
+        projectGrade.classList.add("project-grade")
+        projectGrade.innerText="Grado " + grade+"°"
+        projectLink.classList.add("project-link")
+        projectLink.href=link
+        projectLink.innerText="Ver proyecto"
+        projectLink.target="_blank"
+        project.append(projectTitle,projectDescription,projectImage,projectInstruction,projectAuthors,projectBlocks,projectGrade,projectLink)
+        mainProjects.append(project)
+        /*
+        <div class="project">
+                    <h2 class="project-title">Biomas</h2>
+                    <p class="project-description">Representación de los biomas de Colombia</p>
+                    <img src="https://gobrite.io/wp-content/uploads/2021/07/0-356zWDYXZyGbmQxa.png" alt="" class="project-image">
+                    <p class="project-instruction">No requiere instrucciones particulares</p>
+                    <a href="" target="blank" class="project-link">ir a</a>
+                </div>
+        */
+    });
+    </script>
+</body>
+</html>
